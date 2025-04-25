@@ -1,8 +1,21 @@
-# cipher-code
-A simple program that changes your written text into a "cipher" i.e. changes its text by simply replacing it with a key.
+# 🕵️‍♂️ Substitution Cipher - CS50 Problem Set
 
-In a substitution cipher, we “encrypt” (i.e., conceal in a reversible way) a message by replacing every letter with another letter. To do so, we use a key: in this case, a mapping of each of the letters of the alphabet to the letter it should correspond to when we encrypt it. To “decrypt” the message, the receiver of the message would need to know the key, so that they can reverse the process: translating the encrypt text (generally called ciphertext) back into the original message (generally called plaintext).
+This is my solution to the **Substitution Cipher** problem from [CS50's Introduction to Computer Science](https://cs50.harvard.edu/x/).
 
-A key, for example, might be the string NQXPOMAFTRHLZGECYJIUWSKDVB. This 26-character key means that A (the first letter of the alphabet) should be converted into N (the first character of the key), B (the second letter of the alphabet) should be converted into Q (the second character of the key), and so forth.
+The program encrypts plaintext using a substitution cipher based on a provided key.
 
-A message like HELLO, then, would be encrypted as FOLLE, replacing each of the letters according to the mapping determined by the key.
+## 🧠 How It Works
+
+You run the program with a 26-letter key (like `YTNSHKVEFXRBAUQZCLWDMIPGJO`) and then enter the plaintext. The output is a ciphertext with letters substituted accordingly.
+
+## 🚀 How to Run
+
+### Option 1: Run in CS50 IDE (Recommended ✅)
+
+1. Go to [https://cs50.io](https://cs50.io) and log in.
+2. Open your IDE and create a new folder.
+3. Upload `substitution.c` into that folder.
+4. Open a terminal and run:
+
+   ```bash
+   make substitution
